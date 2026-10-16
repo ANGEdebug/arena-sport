@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arena Sport · Boutique de sport à Abidjan</title>
+  <meta name="description" content="Ballons, vêtements, chaussures et accessoires de sport.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#">Arena<span>Sport</span></a>
+    <label class="search">
+      <input id="search" type="search" placeholder="Rechercher un produit" aria-label="Rechercher">
+    </label>
+    <button id="openCart" class="cart-btn" aria-label="Ouvrir le panier">
+      Panier <b id="count">0</b>
+    </button>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Équipe-toi.<br>Joue mieux.</h1>
+      <p>Ballons, tenues, chaussures et accessoires pour le terrain, la salle et la rue. Livraison à Abidjan.</p>
+      <a class="cta" href="#shop">Voir la boutique</a>
+    </div>
+    <div class="hero-img">
+      <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1200&q=85" alt="" onerror="this.remove()">
+    </div>
+  </section>
+
+  <main id="shop">
+    <div class="bar">
+      <nav id="filters" class="filters" aria-label="Catégories"></nav>
+      <select id="sort" aria-label="Trier">
+        <option value="default">Nos choix</option>
+        <option value="asc">Prix croissant</option>
+        <option value="desc">Prix décroissant</option>
+      </select>
+    </div>
+    <div id="grid" class="grid"></div>
+    <p id="none" class="none" hidden>Aucun produit ne correspond à votre recherche.</p>
+  </main>
+
+  <footer>Arena Sport · Abidjan, Côte d'Ivoire</footer>
+
+  <div id="overlay" class="overlay"></div>
+  <aside id="drawer" class="drawer" aria-label="Panier" aria-hidden="true">
+    <div class="drawer-head">
+      <h2>Votre panier</h2>
+      <button id="closeCart" class="icon-btn" aria-label="Fermer">✕</button>
+    </div>
+    <div id="lines" class="lines"></div>
+    <div id="foot" class="drawer-foot">
+      <div class="total"><span>Total</span><strong id="total">0 FCFA</strong></div>
+      <form id="order" class="order">
+        <input name="name" placeholder="Votre nom" required>
+        <input name="phone" type="tel" placeholder="Téléphone" required>
+        <input name="addr" placeholder="Adresse de livraison" required>
+        <button class="cta block">Commander</button>
+      </form>
+    </div>
+    <div id="done" class="done" hidden>
+      <div class="check">✓</div>
+      <h3>Commande confirmée</h3>
+      <p id="doneMsg"></p>
+      <button id="doneClose" class="cta">Continuer mes achats</button>
+    </div>
+  </aside>
+
+  <div id="toast" class="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
