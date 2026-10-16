@@ -119,32 +119,6 @@ sudo docker ps
 
 ### 7. Accéder au site
 
-Le site est accessible à l'adresse `http://IP_PUBLIQUE` (en http, sans https).
+Le site est accessible à l'adresse `http://52.47.197.111` (en http, sans https).
 
-## Problèmes rencontrés
 
-| Problème | Solution |
-|----------|----------|
-| Clé `.pem` refusée sous Windows (`UNPROTECTED PRIVATE KEY FILE`) | Retirer les droits des autres utilisateurs avec `icacls` |
-| `ERR_CONNECTION_TIMED_OUT` | Le port 80 était fermé : ajout de la règle HTTP dans le Security group |
-| `ERR_CONNECTION_REFUSED` | Le conteneur ne tournait pas : relance avec `docker run` sur le serveur |
-| Conflit de nom de conteneur | Commande lancée sur le PC au lieu du serveur : se connecter au serveur d'abord |
-| Site inaccessible après suppression de l'instance | Une instance supprimée ne revient pas : création d'une nouvelle instance |
-
-## Travailler en équipe sur le dépôt
-
-```bash
-git clone https://github.com/PSEUDO_ANGE/arena-sport.git
-cd arena-sport
-git checkout -b ma-branche
-# modifier des fichiers
-git add .
-git commit -m "Décrire la modification"
-git push -u origin ma-branche
-```
-
-Ensuite, ouvrir une **Pull Request** sur GitHub pour proposer la modification. Elle est relue puis fusionnée dans `main`.
-
-<!-- Captures d'écran : placer les images dans un dossier docs/ puis ajouter par exemple :
-![Site en ligne](docs/site.png)
--->
