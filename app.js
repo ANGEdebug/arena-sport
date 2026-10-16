@@ -2,13 +2,13 @@ const IMG = photo => `https://images.unsplash.com/photo-${photo}?auto=format&fit
 
 // Pour utiliser tes propres photos : remplace img par "images/ballon-foot.jpg" par exemple.
 const PRODUCTS = [
-  {id:1,  name:"Ballon de football Pro",   cat:"Ballons",     price:15000, icon:"⚽", img:IMG("1579952363873-27f3bade9f55"), badge:"Best-seller"},
-  {id:2,  name:"Ballon de basket Indoor",  cat:"Ballons",     price:18000, icon:"🏀", img:IMG("1519861531473-9200262188bf")},
-  {id:3,  name:"Ballon de volley",         cat:"Ballons",     price:12000, icon:"🏐", img:IMG("1592656094267-764a45160876")},
+  {id:1,  name:"Ballon de football Pro",   cat:"Ballons",     price:15000, icon:"⚽", img:"images\Ballon.avif", badge:"Best-seller"},
+  {id:2,  name:"Ballon de basket Indoor",  cat:"Ballons",     price:18000, icon:"🏀", img:"images\Basket.avif"},
+  {id:3,  name:"Ballon de volley",         cat:"Ballons",     price:12000, icon:"🏐", img:"images\volley"},
   {id:4,  name:"Maillot d'entraînement",   cat:"Vêtements",   price:9500,  icon:"👕", img:"https://upload.wikimedia.org/wikipedia/commons/f/f1/Netherlands_national_football_shirt.jpg", badge:"Nouveau", credit:"Strologoff · CC BY-SA 3.0", creditUrl:"https://commons.wikimedia.org/wiki/File:Netherlands_national_football_shirt.jpg"},
   {id:5,  name:"Short de sport",           cat:"Vêtements",   price:6500,  icon:"🩳", img:"https://upload.wikimedia.org/wikipedia/commons/7/74/4R0A2151.jpg", credit:"Lacoste Sokhna · CC BY-SA 4.0", creditUrl:"https://commons.wikimedia.org/wiki/File:4R0A2151.jpg"},
   {id:6,  name:"Survêtement complet",      cat:"Vêtements",   price:25000, icon:"🧥", img:"https://upload.wikimedia.org/wikipedia/commons/0/0d/Kyle-cassidy-tracksuit.jpg", credit:"Kyle Cassidy · CC BY-SA 3.0", creditUrl:"https://commons.wikimedia.org/wiki/File:Kyle-cassidy-tracksuit.jpg"},
-  {id:7,  name:"Chaussures de running",    cat:"Chaussures",  price:32000, icon:"👟", img:IMG("1542291026-7eec264c27ff"), badge:"Best-seller"},
+  {id:7,  name:"Chaussures de running",    cat:"Chaussures",  price:32000, icon:"👟", img:"images\chaussures", badge:"Best-seller"},
   {id:8,  name:"Crampons de football",     cat:"Chaussures",  price:28000, icon:"🥾", img:IMG("1511882150382-421056c89033")},
   {id:9,  name:"Gants de gardien",         cat:"Accessoires", price:11000, icon:"🧤", img:"https://upload.wikimedia.org/wikipedia/commons/5/57/Football_goalkeeper_gloves_Force_1000.jpg", credit:"Santeri Viinamäki · CC BY-SA 4.0", creditUrl:"https://commons.wikimedia.org/wiki/File:Football_goalkeeper_gloves_Force_1000.jpg"},
   {id:10, name:"Sac de sport",             cat:"Accessoires", price:14000, icon:"🎒", img:IMG("1553062407-98eeb64c6a62")},
